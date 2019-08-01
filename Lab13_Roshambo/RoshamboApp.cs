@@ -9,27 +9,44 @@ namespace Lab13_Roshambo
         public static void Run()
         {
             Player user = new UserPlayer();
+            bool go = true;
 
             Console.WriteLine("Yo! Enter your name!");
             user.Name = Console.ReadLine();
 
-            Console.WriteLine("\nChoose an opponent!");
-            Console.WriteLine("1. Wilbur");
-            Console.WriteLine("2. Rocky");
+            while (go)
+            {
+                Console.WriteLine("\nChoose an opponent!");
+                Console.WriteLine("1. Wilbur");
+                Console.Write("2. Rocky\t");
 
-            Player userOpponent = PickPlayer();
-            //Console.WriteLine(userOpponent.Name);
+                Player userOpponent = PickPlayer();
+                //Console.WriteLine(userOpponent.Name);
 
-            Roshambo match = RockPaperScissors(userOpponent);
-            //Console.WriteLine(match);
+                Roshambo match = RockPaperScissors(userOpponent);
+                //Console.WriteLine(match);
 
-            Console.Write("\nChoose your weapon!\t");
-            Console.Write("[ rock. paper. scissors ]\t");
-            string userPick = Console.ReadLine();
-            string print = RoshamboResults(userPick, match);
+                Console.Write("\nChoose your weapon!\t");
+                Console.Write("[ rock. paper. scissors ]\t");
+                string userPick = Console.ReadLine();
+                string print = RoshamboResults(userPick, match);
 
-            Console.WriteLine('\n');
-            Console.WriteLine(print);
+                Console.WriteLine('\n');
+                Console.WriteLine(print);
+
+                Console.WriteLine("play again? [y/n]");
+                string playAgain = Console.ReadLine().ToLower();
+
+                if (playAgain == "y"|| playAgain == "yes")
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("\nThanks for playing!");
+                    go = false;
+                }
+            }
         }
 
         public static Player PickPlayer()
