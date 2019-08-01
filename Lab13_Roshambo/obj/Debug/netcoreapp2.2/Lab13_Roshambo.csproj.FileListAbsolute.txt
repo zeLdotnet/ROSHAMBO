@@ -1,0 +1,11 @@
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\bin\Debug\netcoreapp2.2\Lab13_Roshambo.deps.json
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\bin\Debug\netcoreapp2.2\Lab13_Roshambo.runtimeconfig.json
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\bin\Debug\netcoreapp2.2\Lab13_Roshambo.runtimeconfig.dev.json
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\bin\Debug\netcoreapp2.2\Lab13_Roshambo.dll
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\bin\Debug\netcoreapp2.2\Lab13_Roshambo.pdb
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.csprojAssemblyReference.cache
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.csproj.CoreCompileInputs.cache
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.AssemblyInfoInputs.cache
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.AssemblyInfo.cs
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.dll
+C:\Users\zeL\grandCircus\labs\grandRepo\Lab13_Roshambo\Lab13_Roshambo\obj\Debug\netcoreapp2.2\Lab13_Roshambo.pdb
