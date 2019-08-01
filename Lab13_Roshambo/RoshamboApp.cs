@@ -34,10 +34,9 @@ namespace Lab13_Roshambo
                 Console.WriteLine('\n');
                 Console.WriteLine(print);
 
-                Console.WriteLine("play again? [y/n]");
+                Console.WriteLine("\nenter [y] to play again. any other key to close.");
                 string playAgain = Console.ReadLine().ToLower();
-
-                if (playAgain == "y"|| playAgain == "yes")
+                if (playAgain == "y" || playAgain == "yes")
                 {
                     continue;
                 }
@@ -53,11 +52,11 @@ namespace Lab13_Roshambo
         {
             string opponent = Console.ReadLine();
 
-            if(opponent == "1")
+            if (opponent == "1")
             {
                 Player rp = new RandomPlayer();
                 rp.Name = "Wilbur";
-                 return rp;                
+                return rp;
             }
             else if (opponent == "2")
             {
@@ -75,12 +74,12 @@ namespace Lab13_Roshambo
         {
             if (opponent.Name == "Wilbur")
             {
-              // opponent = new RandomPlayer();
-               return opponent.GenerateRoshambo();
+                // opponent = new RandomPlayer();
+                return opponent.GenerateRoshambo();
             }
-            else if(opponent.Name == "Rocky")
+            else if (opponent.Name == "Rocky")
             {
-              //  opponent = new RockPlayer();
+                //  opponent = new RockPlayer();
                 return opponent.GenerateRoshambo();
             }
             else
@@ -91,29 +90,29 @@ namespace Lab13_Roshambo
 
         public static string RoshamboResults(string userThrow, Roshambo opponentThrow)
         {
-            if(userThrow == "rock" && opponentThrow == Roshambo.paper)
+            if (userThrow == "rock" && opponentThrow == Roshambo.paper)
             {
                 return $"{userThrow} vs. {opponentThrow}. \tYou lose...";
             }
-            else if(userThrow == "rock" && opponentThrow == Roshambo.scissors)
+            else if (userThrow == "rock" && opponentThrow == Roshambo.scissors)
             {
                 return $"{userThrow} vs. {opponentThrow} \tYou win!";
             }
-            else if(userThrow == "rock" && opponentThrow == Roshambo.rock)
+            else if (userThrow == "rock" && opponentThrow == Roshambo.rock)
             {
-                return $"{userThrow} vs. {opponentThrow} \tIssa draw.";
+                return $"{userThrow} vs. {opponentThrow} \t-draw-";
             }
-            else if(userThrow == "paper" && opponentThrow == Roshambo.scissors)
+            else if (userThrow == "paper" && opponentThrow == Roshambo.scissors)
             {
                 return $"{userThrow} vs. {opponentThrow}. \tYou lose...";
             }
-            else if(userThrow == "paper" && opponentThrow == Roshambo.rock)
+            else if (userThrow == "paper" && opponentThrow == Roshambo.rock)
             {
                 return $"{userThrow} vs. {opponentThrow}. \tYou win!";
             }
             else if (userThrow == "paper" && opponentThrow == Roshambo.paper)
             {
-                return $"{userThrow} vs. {opponentThrow} \tIssa draw.";
+                return $"{userThrow} vs. {opponentThrow} \t-draw-";
             }
             else if (userThrow == "scissors" && opponentThrow == Roshambo.rock)
             {
@@ -123,9 +122,9 @@ namespace Lab13_Roshambo
             {
                 return $"{userThrow} vs. {opponentThrow}. \tYou win!";
             }
-            else 
+            else
             {
-                return $"{userThrow} vs. {opponentThrow} \tIssa draw.";
+                return $"{userThrow} vs. {opponentThrow} \t-draw-";
             }
         }
     }
